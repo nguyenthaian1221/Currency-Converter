@@ -1,121 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
     tools:context=".MainActivity2">
 
     <TextView
         android:id="@+id/tv_from_currency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="From currency"
-        />
+        android:text="From currency:"
+        android:textSize="18dp" />
 
-
-    <RadioGroup
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/radio_CNY"
+        <RadioGroup
+            android:id="@+id/radio_group1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CNY"/>
+            android:layout_marginRight="135dp">
 
 
-        <RadioButton
-            android:id="@+id/radio_KRW"
+            <RadioButton
+                android:id="@+id/radio_CNY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNY" />
+
+            <RadioButton
+                android:id="@+id/radio_EUR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EUR" />
+
+            <RadioButton
+                android:id="@+id/radio_JPY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JPY" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radio_group_2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KRW"/>
-
-        <RadioButton
-            android:id="@+id/radio_EUR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="EUR"/>
+            android:layout_height="wrap_content">
 
 
-        <RadioButton
-            android:id="@+id/radio_USD"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="USD"/>
-
-        <RadioButton
-            android:id="@+id/radio_JPY"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="JPY"/>
-
-        <RadioButton
-            android:id="@+id/radio_VND"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="VND"/>
+            <RadioButton
+                android:id="@+id/radio_KRW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KRW" />
 
 
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/radio_USD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USD" />
 
+
+            <RadioButton
+                android:id="@+id/radio_VND"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VND" />
+
+        </RadioGroup>
+
+    </LinearLayout>
 
 
     <TextView
         android:id="@+id/tv_to_currency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="To currency"
-        />
+        android:layout_marginTop="20dp"
+        android:text="To currency:"
+        android:textSize="18dp" />
 
 
-    <RadioGroup
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/radio_to_CNY"
+        <RadioGroup
+            android:id="@+id/radio_group3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CNY"/>
+            android:layout_marginRight="135dp">
 
 
-        <RadioButton
-            android:id="@+id/radio_to_KRW"
+            <RadioButton
+                android:id="@+id/radio_to_CNY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNY" />
+
+            <RadioButton
+                android:id="@+id/radio_to_EUR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EUR" />
+
+            <RadioButton
+                android:id="@+id/radio_to_JPY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JPY" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radio_group_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:id="@+id/radio_to_KRW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KRW" />
+
+
+            <RadioButton
+                android:id="@+id/radio_to_USD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USD" />
+
+
+            <RadioButton
+                android:id="@+id/radio_to_VND"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VND" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Ok"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="KRW"/>
+            android:ems="8"
+            android:text="OK" />
 
-        <RadioButton
-            android:id="@+id/radio_to_EUR"
+        <Button
+            android:id="@+id/btn_Cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="EUR"/>
+            android:layout_marginLeft="50dp"
+            android:ems="8"
+            android:text="Cancel" />
+
+    </LinearLayout>
 
 
-        <RadioButton
-            android:id="@+id/radio_to_USD"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="USD"/>
-
-        <RadioButton
-            android:id="@+id/radio_to_JPY"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="JPY"/>
-
-        <RadioButton
-            android:id="@+id/radio_to_VND"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="VND"/>
-
-
-    </RadioGroup>
-
-
-
-
-
-</RelativeLayout>
+</LinearLayout>
